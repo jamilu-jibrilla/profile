@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body, * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.App {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+header {
+    position: relative;
+}
+.profile {
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+.share_icon {
+    position: absolute;
+    top: 35px;
+    width: 40px;
+    height: 40px;
+    right: 208px;
+    background: #FFFFFF;
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+    border: 1px dashed #D0D5DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+.share_icon img {
+    width: 15px;
+    height: 14px;
+}
+.share_icon:hover {
+    background: #F9FAFB;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    padding: 24px 32px;
+    margin:18px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social_links {
+    margin-top: 10px;
+    padding: 24px, 0px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_links img {
+    height: 24px;
+    width: 24px;
+    margin: 3px 10px;
+
+}
+
+
+footer {
+    margin-top: 60px;
+}
+
+.footer_sect {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-top: 1px solid #EAECF0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer_sect p {
+    font-size: 16px;
+    color:rgba(102, 112, 133, 1);
+
+}
+
+.footer_sect img {
+    height: 32px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .App {
+        width: 90%;
+    }
+
+    .share {
+        display: none;
+    }
+
+    .share_icon .mobile_nav {
+        display: flex;
+        width: 40px;
+        height: 40px ;
+    }
+    
+    .footer_sect {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        padding: 10px 0px;
+    }
+    
+    .footer_sect img {
+        height: 22px;
+        margin: 15px 0px;
+    }
+
+    
+    .share_icon {
+        position: absolute;
+        top: 35px;
+        right: 10px
+    }
+}
