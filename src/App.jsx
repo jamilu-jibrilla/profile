@@ -21,6 +21,7 @@ function App() {
                     <a className='links' id='book__python' href="https://books.zuri.team/python-for-beginners?ref_id=Jamil">Python Books</a>
                     <a className='links' id='pitch' href="https://background.zuri.team">Background Check for Coders</a>
                     <a className='links' id='book__design' href="https://books.zuri.team/design-rules">Design Books</a>
+                    <a className='links' id='contact' href="/contact">contact</a>
                     <div className="social_links">
                         <img src="/assets/slack.png" alt="slack icon" />
                         <img src="/assets/github.png" alt="github icon" />

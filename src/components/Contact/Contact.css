@@ -89,3 +89,21 @@ textarea {
     width: 100%;
     
 }
+
+@media screen and (max-width: 500px) {
+    .form div {
+        width: 90%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .form .intro {
+        font-size: 15px;
+    }
+    .row1 {
+        display: block;
+    }   
+    .label1 input{
+        margin-bottom: 20px !important;
+    }
+}
