@@ -10,27 +10,27 @@ function Contact() {
                     <form>
                         <div className="row1">
                             <label className="label1"> First name <br />
-                                <input id="first_name" type="text" placeholder="Enter your first name" />
+                                <input id="first_name" type="text" placeholder="Enter your first name" required />
                             </label>
 
                             <label> Last name <br />
-                                <input id="last_name" type="text" placeholder="Enter your last name" />
+                                <input id="last_name" type="text" placeholder="Enter your last name" required />
                             </label> <br />
                         </div>
                         <div className="row2">
                             <label> Email <br />
-                                <input id="email" type="text" placeholder="yourname@email.com" />
+                                <input id="email" type="text" placeholder="yourname@email.com" required/>
                             </label> <br />
                         </div>
 
                         <label id="message" className="text_area"> Message <br />
-                            <textarea name="" id="" cols="30" rows="7" placeholder="send me a message and i'll reply you as soon as possible"></textarea>
+                            <textarea name="" id="" cols="30" rows="7" placeholder="send me a message and i'll reply you as soon as possible" required></textarea>
                         </label>
 
-                        <div className="accept_terms">
-                            <input type="checkbox" />
+                        <label className="accept_terms">
+                            <input type="checkbox" required/>
                             <p>You agree to providing your data to jamil who may contact you.</p>
-                        </div>
+                        </label>
 
                         <button id="btn_submit" className="submit">Send message</button>
                     </form>
