@@ -44,16 +44,19 @@ textarea {
     border-radius: 8px;
     margin: 7px 0px;
     padding: 10px 14px;
-
+    /* transition: all 1s; */
 }
 
 input:focus, textarea:focus {
     outline: none;
+    border: 1px solid lightgreen;
 }
 
 form {
     font-size: 14px;
 }
+
+
 
 .row2 {
     margin-bottom: 20px;
@@ -62,6 +65,21 @@ form {
 .row2 input {
     width: 100%;
 }
+
+.error input::placeholder {
+    color: red;
+}
+
+.red-error {
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.none {
+    display: none;
+}
+
 
 textarea {
     width: 100%;
@@ -87,7 +105,7 @@ textarea {
     border: none;
     color: white;
     width: 100%;
-    
+    cursor: pointer;
 }
 
 
@@ -95,7 +113,7 @@ label {
     font-weight: 500;
 }
 @media screen and (max-width: 500px) {
-    .form div {
+    .form > div {
         width: 90%;
     }
     h1 {
@@ -105,9 +123,16 @@ label {
         font-size: 17px;
     }
     .row1 {
-        display: block;
-    }   
-    .label1 input{
-        margin-bottom: 20px !important;
+        flex-direction: column;
+    }
+
+    .row1 label {
+        width: 100%;
+    }
+
+    
+    .row1 .label1{
+        margin-bottom: 20px;
+        padding-right: 0px;
     }
 }
